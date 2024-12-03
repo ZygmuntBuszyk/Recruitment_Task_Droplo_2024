@@ -1,0 +1,31 @@
+{
+  "name": "zadanierekrutacyjnedroplo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "docker:up": "docker-compose -f docker/docker-compose.yml up",
+    "docker:down": "docker-compose -f docker/docker-compose.yml down"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "csv-parser": "^3.0.0",
+    "lodash": "^4.17.21",
+    "mongodb-memory-server": "^10.1.2",
+    "mongoose": "^7.0.0",
+    "sharp": "^0.32.6",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^18.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.0.0"
+  }
+}
